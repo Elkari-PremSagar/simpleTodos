@@ -1,22 +1,21 @@
 .todo-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px;
   margin-bottom: 12px;
 }
 
 .todo-title {
-  font-family: 'Roboto';
-  font-size: 16px;
-  color: #000000;
+  flex-grow: 1;
 }
 
-.delete-button {
-  background-color: transparent;
-  color: #ff0b37;
-  border: 1px solid #ff0b37;
-  border-radius: 6px;
-  padding: 6px 12px;
+.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.action-btn,
+.delete-btn {
   cursor: pointer;
   outline: none;
 }
